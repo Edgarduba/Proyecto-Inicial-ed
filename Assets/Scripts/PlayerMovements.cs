@@ -12,7 +12,7 @@ public class PlayerMovements : MonoBehaviour
     private float horizontal;
     public PlayableDirector director;
     private Animator anim;
-
+    
 
 
     public float sensorRadius = 0.1f;
@@ -20,8 +20,8 @@ public class PlayerMovements : MonoBehaviour
     public Transform groundSensor;
     public LayerMask ground;
     public float jumpForce = 20;
-    public float jumpHeight = 1;
-    private float gravity = -9.81f;
+    //public float jumpHeight = 1;
+    //private float gravity = -9.81f;
     public bool isGrounded;
 
 
@@ -29,19 +29,17 @@ public class PlayerMovements : MonoBehaviour
     void Jump()
     {
         //isGrounded = controller.isGrounded;
-        isGrounded = Physics.CheckSphere(groundSensor.position, sensorRadius, ground);
-        if(isGrounded && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0;
-        }
-
+        isGrounded = Physics2D.OverlapCircle(groundSensor.position, sensorRadius, ground);
+        
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            //playerVelocity.y += jumpForce;
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -2.0f * gravity);
+            body.AddForce(transform.up * jumpForce);
         }
-        playerVelocity.y += gravity * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        if(isGrounded = true) 
+        {
+            Debug.Log("Suelo");
+        }
+        
     }
     
 
@@ -56,6 +54,7 @@ public class PlayerMovements : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        body = GetComponent<Rigidbody2D>();
 
         if(horizontal == 0)
         {
@@ -84,6 +83,8 @@ public class PlayerMovements : MonoBehaviour
         }
         
     }
+
+   
     
 
 
