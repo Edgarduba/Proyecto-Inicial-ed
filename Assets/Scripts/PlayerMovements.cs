@@ -10,6 +10,7 @@ public class PlayerMovements : MonoBehaviour
     public float runSpeed = 2f;
     private Rigidbody2D body;
     private float horizontal;
+    private float vertical;
     public PlayableDirector director;
     private Animator anim;
     
@@ -19,21 +20,33 @@ public class PlayerMovements : MonoBehaviour
     private Vector2 playerVelocity;
     public Transform groundSensor;
     public LayerMask ground;
-    public float jumpForce = 20;
+    public float jumpForce = 20f;
     //public float jumpHeight = 1;
     //private float gravity = -9.81f;
-    public bool isGrounded;
+    public bool isGrounded = false;
+    private Transform playerTransform;
 
 
+     private void Awake()
+    {
+        body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        playerTransform = GetComponent<Transform>();
+    }
 
     void Jump()
     {
         //isGrounded = controller.isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundSensor.position, sensorRadius, ground);
         
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(Input.GetButtonDown("jump") && isGrounded)
+        { 
+            body.AddForce(Vector2.up * jumpForce);
+            anim.SetBool("jump" , true);
+        }
+        else 
         {
-            body.AddForce(transform.up * jumpForce);
+            anim.SetBool("jump" , false);
         }
         if(isGrounded = true) 
         {
@@ -44,35 +57,47 @@ public class PlayerMovements : MonoBehaviour
     
 
 
-    void Start() 
+    /*void Start() 
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-    }
+        playerTransform = GetComponent<Transform>();
+    }*/
 
       
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        body = GetComponent<Rigidbody2D>();
-
-        if(horizontal == 0)
-        {
-            anim.SetBool("Correr", false);
-        }
-        else
-        {
-            anim.SetBool("Correr", true);
-        }
-
+        horizontal = Input.GetAxisRaw("Horizontal"); 
         Jump();
-        
+        //GameManager.Instance.RestarVidas();
+        //GameManager.Instance.vidas;
+        //Global.nivel = 1;
+       
     }
 
 
     private void FixedUpdate()
     {
         body.velocity = new Vector2(horizontal * runSpeed, 0);
+
+        horizontal = Input.GetAxisRaw("Horizontal");
+        body = GetComponent<Rigidbody2D>();
+
+        if(horizontal == 0)
+        {
+            anim.SetBool("run", false);
+    
+        }
+        else if (horizontal == 1)
+        {
+            anim.SetBool("run", true);
+            playerTransform.rotation =Quaternion.Euler(0, 0,0);
+        }
+        else if (horizontal == -1)
+        {
+            anim.SetBool("run", true);
+            playerTransform.rotation =Quaternion.Euler(0, -180,0);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) 
