@@ -106,6 +106,12 @@ public class PlayerMovements : MonoBehaviour
         {
             director.Play();
         }
+        if(other.gameObject.layer == 6)
+        {
+            //GameManager.Instance.RestarVidas();
+            StartCoroutine(GameObject.Find("Main Camera").GetComponent<CameraShake>().Shake());
+            Destroy(other.gameObject);
+        }
         
     }
 
