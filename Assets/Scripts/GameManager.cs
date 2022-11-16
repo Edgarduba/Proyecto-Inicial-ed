@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public int vidas = 3;
     public int puntos = 0;
-
+    public AudioClip bomba;
 
     void Awake() 
     {
