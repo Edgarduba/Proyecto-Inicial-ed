@@ -898,7 +898,6 @@ GameObject:
   m_Component:
   - component: {fileID: 600537831}
   - component: {fileID: 600537833}
-  - component: {fileID: 600537832}
   m_Layer: 0
   m_Name: trees (1)
   m_TagString: Untagged
@@ -921,19 +920,6 @@ Transform:
   m_Father: {fileID: 250926754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &600537832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600537830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &600537833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -974,7 +960,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 46bcbd3260a14e44c9a577d4587f379e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20174,7 +20160,6 @@ GameObject:
   m_Component:
   - component: {fileID: 672326909}
   - component: {fileID: 672326911}
-  - component: {fileID: 672326910}
   m_Layer: 0
   m_Name: trees (2)
   m_TagString: Untagged
@@ -20197,19 +20182,6 @@ Transform:
   m_Father: {fileID: 250926754}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &672326910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672326908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &672326911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20250,7 +20222,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 46bcbd3260a14e44c9a577d4587f379e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20272,7 +20244,6 @@ GameObject:
   m_Component:
   - component: {fileID: 712145372}
   - component: {fileID: 712145374}
-  - component: {fileID: 712145373}
   m_Layer: 0
   m_Name: coluds_small (1)
   m_TagString: Untagged
@@ -20295,19 +20266,6 @@ Transform:
   m_Father: {fileID: 1888874160}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &712145373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712145371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &712145374
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20631,7 +20589,6 @@ GameObject:
   m_Component:
   - component: {fileID: 751606628}
   - component: {fileID: 751606627}
-  - component: {fileID: 751606629}
   m_Layer: 0
   m_Name: sky (2)
   m_TagString: Untagged
@@ -20706,19 +20663,6 @@ Transform:
   m_Father: {fileID: 291938425}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &751606629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751606626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!1 &776631730
 GameObject:
   m_ObjectHideFlags: 0
@@ -20773,7 +20717,6 @@ GameObject:
   m_Component:
   - component: {fileID: 794967347}
   - component: {fileID: 794967349}
-  - component: {fileID: 794967348}
   m_Layer: 0
   m_Name: clouds_back_layer1 (1)
   m_TagString: Untagged
@@ -20796,19 +20739,6 @@ Transform:
   m_Father: {fileID: 384251301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &794967348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794967346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &794967349
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20871,7 +20801,6 @@ GameObject:
   m_Component:
   - component: {fileID: 875075671}
   - component: {fileID: 875075673}
-  - component: {fileID: 875075672}
   m_Layer: 0
   m_Name: clouds_back_layer1 (2)
   m_TagString: Untagged
@@ -20894,19 +20823,6 @@ Transform:
   m_Father: {fileID: 384251301}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &875075672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875075670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &875075673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20969,7 +20885,6 @@ GameObject:
   m_Component:
   - component: {fileID: 881191572}
   - component: {fileID: 881191574}
-  - component: {fileID: 881191573}
   m_Layer: 0
   m_Name: coluds_small (2)
   m_TagString: Untagged
@@ -20992,19 +20907,6 @@ Transform:
   m_Father: {fileID: 1888874160}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &881191573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881191571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &881191574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21067,7 +20969,6 @@ GameObject:
   m_Component:
   - component: {fileID: 969050645}
   - component: {fileID: 969050647}
-  - component: {fileID: 969050646}
   m_Layer: 0
   m_Name: mountains (1)
   m_TagString: Untagged
@@ -21090,19 +20991,6 @@ Transform:
   m_Father: {fileID: 133675956}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &969050646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969050644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &969050647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21295,7 +21183,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1189362040}
   - component: {fileID: 1189362039}
-  - component: {fileID: 1189362041}
   m_Layer: 0
   m_Name: sky (1)
   m_TagString: Untagged
@@ -21370,19 +21257,6 @@ Transform:
   m_Father: {fileID: 291938425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1189362041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189362038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!1 &1193592195
 GameObject:
   m_ObjectHideFlags: 0
@@ -21477,7 +21351,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1230524738}
   - component: {fileID: 1230524740}
-  - component: {fileID: 1230524739}
   m_Layer: 0
   m_Name: mountains (2)
   m_TagString: Untagged
@@ -21500,19 +21373,6 @@ Transform:
   m_Father: {fileID: 133675956}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1230524739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230524737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73513140b10dbd4b89fdacf4933e605, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ParallaxMultiplier: 0
 --- !u!212 &1230524740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21730,7 +21590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563399772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.69, y: -0.14, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
