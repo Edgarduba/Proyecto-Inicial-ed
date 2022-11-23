@@ -8,6 +8,6 @@ public static class SoundManager
     {
         GameObject soundGameObject = new GameObject ("Sound");
         AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
-        audioSource.PlayOneShot()
+        //audioSource.PlayOneShot();
     }
 }

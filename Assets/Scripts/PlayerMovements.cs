@@ -41,7 +41,7 @@ public class PlayerMovements : MonoBehaviour
         
         if(Input.GetButtonDown("jump") && isGrounded)
         { 
-            body.AddForce(Vector2.up * jumpForce);
+            body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim.SetBool("jump" , true);
         }
         else 
@@ -78,7 +78,7 @@ public class PlayerMovements : MonoBehaviour
 
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(horizontal * runSpeed, 0);
+        body.velocity = new Vector2(horizontal * runSpeed, body.velocity.y);
 
         horizontal = Input.GetAxisRaw("Horizontal");
         body = GetComponent<Rigidbody2D>();

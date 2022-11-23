@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -282, y: -169}
-  m_SizeDelta: {x: 432, y: 263}
+  m_AnchoredPosition: {x: -128.3, y: -82.4}
+  m_SizeDelta: {x: 211, y: 131.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96238670
 MonoBehaviour:
@@ -403,8 +403,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 375, y: -100}
-  m_SizeDelta: {x: 100, y: 80}
+  m_AnchoredPosition: {x: 194.1, y: -45}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136982840
 MonoBehaviour:
@@ -21319,8 +21319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -100}
-  m_SizeDelta: {x: 100, y: 80}
+  m_AnchoredPosition: {x: 124.1, y: -45}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940123820
 MonoBehaviour:
@@ -21609,7 +21609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.2, y: 95.2}
+  m_AnchoredPosition: {x: -0.000012204, y: 35.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1164499022
@@ -21661,8 +21661,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -22309,8 +22309,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -100}
-  m_SizeDelta: {x: 100, y: 80}
+  m_AnchoredPosition: {x: 56.2, y: -45}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568910733
 MonoBehaviour:
@@ -23451,14 +23451,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5334fa3c185b8c1479d5d113d310ab2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 2
+  runSpeed: 4
   director: {fileID: 2004709485}
   sensorRadius: 0.2
   groundSensor: {fileID: 776631731}
   ground:
     serializedVersion: 2
     m_Bits: 8
-  jumpForce: 1000
+  jumpForce: 7
   isGrounded: 0
 --- !u!61 &2008832319
 BoxCollider2D:
@@ -23506,7 +23506,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &2008832322
 Animator:
   serializedVersion: 4
